@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>{% block title %}{% endblock title %} | Joker's Ice Cream!</title>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-1" href="/">
+                <img src="/static/img/logo.png" style="height: 55px;" alt=""> Sweet Scoop 🍦
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/services">Ice Cream</a></li>
+                            <li><a class="dropdown-item" href="#">Soft Tea</a></li>
+                            <li><a class="dropdown-item" href="#">Kulfi</a></li>
+                            <li><a class="dropdown-item" href="#">Cornato</a></li>
+                            <li><a class="dropdown-item" href="#">Ice Cup</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Family Pack</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success me-2" type="submit">Search</button>
+                </form>
+
+                <!-- Sign In and Sign Up Buttons -->
+                <a href="/signin" class="btn btn-primary me-2 mt-3 mt-md-0">Sign In</a>
+                <a href="/signup" class="btn btn-outline-primary mt-3 mt-md-0">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}{% endblock body %}
+    <!-- Page Footer -->
+    <footer class="bg-dark text-light pt-5">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col-6 col-lg-4">
+                    <h3 class="fw-bold">Sweet Scoop 🍦</h3>
+                    <p class="pt-2">123, Dessert Street, Ice Cream City, Sweetland</p>
+                    <p class="mb-2">📞 9876543210</p>
+                    <p>📞 0123456789</p>
+                </div>
+                <div class="col">
+                    <h4>Menu</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1"><a href="/" class="text-decoration-none text-light">Home</a></li>
+                        <li class="py-1"><a href="/flavors" class="text-decoration-none text-light">Flavors</a></li>
+                        <li class="py-1"><a href="/about" class="text-decoration-none text-light">About Us</a></li>
+                        <li class="py-1"><a href="/contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>More</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1"><a href="/specials" class="text-decoration-none text-light">Special Offers</a></li>
+                        <li class="py-1"><a href="/faq" class="text-decoration-none text-light">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>Our Treats</h4>
+                    <ul class="list-unstyled pt-2">
+                        <li class="py-1">Sundaes</li>
+                        <li class="py-1">Milkshakes</li>
+                        <li class="py-1">Ice Cream Cakes</li>
+                        <li class="py-1">Waffle Cones</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-3 text-lg-end">
+                    <h4 px-3>Follow Us</h4>
+                    <div class="social-media pt-2">
+                        <a href="#" class="text-light" style="font-size: 30px; margin-right:15px;"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light" style="font-size: 30px; margin-right: 15px;"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-light" style="font-size: 30px; margin-right: 15px;"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light" style="font-size: 30px; margin-right: 15px;"><i class="bi bi-linkedin"></i></a>
+                        <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-sm-flex justify-content-between py-1">
+                <p>2024 © Sweet Scoop. All Rights Reserved. 🍨</p>
+                <p>
+                    <a href="#" class="text-light text-decoration-none pe-4">Terms of Use</a>
+                    <a href="#" class="text-light text-decoration-none">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <!-- Bootstrap 5 JS (No jQuery Required) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

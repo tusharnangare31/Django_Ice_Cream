@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %}Services{% endblock title %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'services.css' %}">
+
+<!-- Ice Cream Carousel Section -->
+<div class="carousel-container">
+  <section class="p-4 text-center w-100 bg-light">
+    <div class="container">
+      <h2 class="mb-4 text-primary fw-bold">Our Delicious Flavors</h2>
+      <p class="mb-5 text-muted">Indulge in our handcrafted ice creams, made with the finest ingredients.</p>
+
+      <div id="iceCreamCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#iceCreamCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#iceCreamCarousel" data-bs-slide-to="1"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+          <!-- First Slide -->
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="/static/img/iceCream/1.jpg" class="card-img-top" alt="Chocolate Ice Cream">
+                  <div class="card-body">
+                    <h5 class="card-title">Chocolate Delight</h5>
+                    <p class="card-text">Rich, creamy, and indulgent chocolate ice cream made from premium cocoa.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="card shadow-sm">
+                  <img src="/static/img/iceCream/2.jpg" class="card-img-top" alt="Strawberry Ice Cream">
+                  <div class="card-body">
+                    <h5 class="card-title">Strawberry Bliss</h5>
+                    <p class="card-text">A perfect blend of fresh strawberries and creamy goodness.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="card shadow-sm">
+                  <img src="/static/img/iceCream/4.jpg" class="card-img-top" alt="Vanilla Ice Cream">
+                  <div class="card-body">
+                    <h5 class="card-title">Classic Vanilla</h5>
+                    <p class="card-text">Smooth and timeless, made with real vanilla beans.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Slide -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card shadow-sm">
+                  <img src="/static/img/iceCream/a.jpg" class="card-img-top" alt="Mint Ice Cream">
+                  <div class="card-body">
+                    <h5 class="card-title">Mint Chocolate Chip</h5>
+                    <p class="card-text">Refreshing mint with delightful chocolate chips.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="card shadow-sm">
+                  <img src="/static/img/iceCream/b.jpg" class="card-img-top" alt="Cookies & Cream">
+                  <div class="card-body">
+                    <h5 class="card-title">Cookies & Cream</h5>
+                    <p class="card-text">Creamy vanilla swirled with crunchy cookie pieces.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 d-none d-md-block">
+                <div class="card shadow-sm">
+                  <img src="/static/img/iceCream/d.jpg" class="card-img-top" alt="Mango Ice Cream">
+                  <div class="card-body">
+                    <h5 class="card-title">Tropical Mango</h5>
+                    <p class="card-text">Bursting with fresh mango flavor for a tropical treat.</p>
+                    <a href="#" class="btn btn-primary">Order Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="d-flex justify-content-center mt-3">
+          <button class="carousel-control-prev position-relative me-3" type="button" data-bs-target="#iceCreamCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+          </button>
+          <button class="carousel-control-next position-relative" type="button" data-bs-target="#iceCreamCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock body %}
+

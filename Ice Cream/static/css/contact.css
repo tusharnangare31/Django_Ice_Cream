@@ -1,0 +1,28 @@
+
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/img/a.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 80px 0;
+    background-color: wheat;
+}
+.contact-section {
+    margin-top: 30px;
+}
+.contact-info-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+.contact-info-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact-info-card i {
+    margin-right: 10px;
+}
+
+#Heading{
+    background-color: black;
+    opacity: 0.8;
+}

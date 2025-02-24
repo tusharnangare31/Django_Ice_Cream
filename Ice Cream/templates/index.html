@@ -1,0 +1,206 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<div class="container-fluid my-1 px-0">
+  <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="/static/img/iceCream/1.jpg" class="d-block w-100 img-fluid" alt="Ice Cream 1" style="height: 70vh; object-fit: cover;">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                      <h5>Savor the Sweetness!</h5>
+                      <p>🍧 Refresh your day with our delightful sundaes, cones, and shakes!</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="/static/img/iceCream/2.jpg" class="d-block w-100 img-fluid" alt="Ice Cream 2" style="height: 70vh; object-fit: cover;">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                      <h5>Cool Treats, Sweet Moments!</h5>
+                      <p>🍨 From classic vanilla to exotic flavors, there's a scoop for everyone!</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="/static/img/iceCream/4.jpg" class="d-block w-100 img-fluid" alt="Ice Cream 3" style="height: 70vh; object-fit: cover;">
+                  <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded-3 p-3">
+                      <h5>Scoop into Happiness!</h5>
+                      <p>🍦 Indulge in our creamy, handcrafted flavors—made with love in every bite!</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+
+      </div>
+  </div>
+</div>
+
+<div>
+    <div class="container py-3">
+        <h1 class="my-3 text-center" id="heading">The Range of Ice Creams</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/a.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text"><b>Classic Vanilla 🍦</b><br>Smooth, creamy, and timeless—a true classic for all ages!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/b.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text"><b>Chocolate Delight 🍫</b><br>Rich, velvety chocolate ice cream made for true cocoa lovers.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/c.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text"><b>Strawberry Bliss 🍓</b><br>A refreshing blend of ripe strawberries and creamy goodness.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/d.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Mango Tango 🥭</b><br>Tropical mango sweetness with a burst of citrusy zest!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/i.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Cookies & Cream 🍪</b><br>Crunchy cookie chunks swirled in smooth vanilla ice cream.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/e.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Salted Caramel Swirl 🍯</b><br>Sweet caramel with a hint of sea salt for a perfect balance.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/f.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text"><b>Bubblegum Fantasy 💙</b><br>Bright, fun, and bursting with bubblegum flavor!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/g.webp" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text"><b>Pistachio Paradise 🌰</b><br>Nutty, creamy, and irresistibly delicious!<br><br></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="/static/img/iceCream/h.jpg" class="d-block w-100" alt="..." >
+              <div class="card-body">
+                <p class="card-text">
+                  <b>Rocky Road 🍫🌰</b><br>Chocolate, marshmallows, and nuts—a crunchy, chewy treat!</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+{% endblock body %}
+
